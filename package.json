@@ -1,0 +1,27 @@
+{
+  "name": "carmotorent",
+  "version": "1.0.0",
+  "description": "Website for car and motorbike rental",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeejayPL/carmotorent.git"
+  },
+  "author": "VeejayPL - Wojciech Jurkowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VeejayPL/carmotorent/issues"
+  },
+  "homepage": "https://github.com/VeejayPL/carmotorent#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8"
+  }
+}
