@@ -1,19 +1,49 @@
-.green {
-  color: green;
+:root {
+  --primary: #eff1f5;
+  --secondary: #4c4f69;
+  --accent: #8839ef;
+  --andika: "Andika", sans-serif, system-ui;
+  --roboto: "Roboto", sans-serif, system-ui;
 }
 
-.blue {
-  color: blue;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.purple {
-  color: purple;
+body {
+  margin: 0;
+  font-family: var(--roboto);
+  background: var(--primary);
 }
 
-.flex {
-  border: 1px solid blue;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/hero-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 90dvh;
+  text-align: center;
+}
+
+.hero-text {
+  font-family: var(--andika);
+  font-size: 48px;
+  color: var(--primary);
+}
+
+.navigation {
+}
+
+.navigation-items {
   display: flex;
-  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.navigation-items > li > a {
+  color: var(--accent);
+  font-weight: bold;
 }
 
 a {
@@ -22,4 +52,20 @@ a {
 
 ul {
   list-style: none;
+}
+
+.vehicle-list {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/hero.jpg");
+  }
 }
