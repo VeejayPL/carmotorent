@@ -1,6 +1,6 @@
 :root {
-  --primary: #eff1f5;
-  --secondary: #4c4f69;
+  --primary: #4c4f69;
+  --secondary: #eff1f5;
   --accent: #8839ef;
   --andika: "Andika", sans-serif, system-ui;
   --roboto: "Roboto", sans-serif, system-ui;
@@ -10,48 +10,167 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   font-family: var(--roboto);
   background: var(--primary);
+  position: relative;
 }
 
+/*---------------- UTILS ---------------*/
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+ul {
+  list-style: none;
+}
+
+/*---------------- HEADER Section ---------------*/
+.header {
+  /* position: sticky; */
+  /* top: 0; */
+  /* left: 0; */
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 500ms ease-in-out;
+  /* height: 10vh; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.scrolled {
+  background: var(--primary);
+}
+
+.container {
+  max-width: 1224px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-family: var(--andika);
+  font-size: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  transition: 300ms ease-out;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.nav-button {
+  display: none;
+  margin: 5px;
+  --button-color: var(--secondary);
+  background: transparent;
+  border: 4px solid var(--button-color, #000);
+  border-radius: 8px;
+}
+
+.nav-button[data-state="closed"] :is(.top, .bottom) {
+  animation: to-open-icon 1s forwards;
+}
+
+.nav-button[data-state="opened"] :is(.top, .bottom) {
+  animation: to-close-icon 1s forwards;
+}
+.nav-button .hamburger {
+  transition: rotate 800ms 100ms;
+}
+.nav-button[data-state="opened"] .hamburger {
+  rotate: 1turn;
+}
+
+.nav-button .line.top {
+  --rotation: -45deg;
+  transform-origin: 65px 45px;
+}
+.nav-button .line.bottom {
+  --rotation: 45deg;
+  transform-origin: 60px 55px;
+}
+
+@keyframes to-close-icon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+}
+@keyframes to-open-icon {
+  0% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*---------------- HERO Section ---------------*/
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/hero-mobile.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 90dvh;
+  min-height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero > h1 {
+  margin-top: 0;
 }
 
 .hero-text {
-  font-family: var(--andika);
+  font-family: var(--roboto);
   font-size: 48px;
-  color: var(--primary);
-}
-
-.navigation {
-}
-
-.navigation-items {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.navigation-items > li > a {
-  color: var(--accent);
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+  color: var(--secondary);
 }
 
 .vehicle-list {
@@ -68,4 +187,32 @@ ul {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("/images/hero.jpg");
   }
+}
+
+@media (max-width: 1024px) {
+  .nav-button {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background: var(--primary);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  .header.active {
+    background: var(--primary)
 }
