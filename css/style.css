@@ -1,6 +1,7 @@
 :root {
   --primary: #4c4f69;
   --secondary: #eff1f5;
+  --button-color: var(--secondary);
   --accent: #8839ef;
   --andika: "Andika", sans-serif, system-ui;
   --roboto: "Roboto", sans-serif, system-ui;
@@ -16,6 +17,7 @@
 
 body {
   margin: 0;
+  /* animation: fadeIn 600ms forwards ease-in-out; */
   font-family: var(--roboto);
   background: var(--primary);
   position: relative;
@@ -33,19 +35,13 @@ ul {
 
 /*---------------- HEADER Section ---------------*/
 .header {
-  /* position: sticky; */
-  /* top: 0; */
-  /* left: 0; */
   background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
   transition: all 500ms ease-in-out;
-  /* height: 10vh; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
 }
 
 .scrolled {
@@ -88,7 +84,6 @@ ul {
 .nav-button {
   display: none;
   margin: 5px;
-  --button-color: var(--secondary);
   background: transparent;
   border: 4px solid var(--button-color, #000);
   border-radius: 8px;
@@ -117,6 +112,74 @@ ul {
   transform-origin: 60px 55px;
 }
 
+/*---------------- HERO Section ---------------*/
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("/images/hero-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.chevron {
+  width: 8rem;
+}
+
+.chevron-line {
+  stroke-width: 5px;
+}
+
+.chevron.animated {
+  animation: bounce 2s ease infinite;
+}
+
+/* .hero-text { */
+/* font-family: var(--roboto); */
+/* font-size: 48px; */
+/* color: var(--secondary); */
+/* animation: fadeIn 600ms forwards ease-in-out; */
+/* } */
+
+.vehicle-list {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+
+/* ------------------- Animations ------------------------ */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes to-close-icon {
   0% {
     stroke-dashoffset: 0;
@@ -133,6 +196,7 @@ ul {
     rotate: var(--rotation);
   }
 }
+
 @keyframes to-open-icon {
   0% {
     stroke-dashoffset: 0;
@@ -150,46 +214,17 @@ ul {
   }
 }
 
-/*---------------- HERO Section ---------------*/
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/hero-mobile.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero > h1 {
-  margin-top: 0;
-}
-
-.hero-text {
-  font-family: var(--roboto);
-  font-size: 48px;
-  color: var(--secondary);
-}
-
-.vehicle-list {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid green;
-}
-
+/* --------------- Media Queries ------------------------- */
 @media (min-width: 600px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url("/images/hero.jpg");
   }
 }
 
 @media (max-width: 1024px) {
+  /*---------------- HEADER Section ---------------*/
+
   .nav-button {
     display: block;
   }
@@ -214,5 +249,15 @@ ul {
     left: 0;
   }
   .header.active {
-    background: var(--primary)
+    background: var(--primary);
+  }
+
+  /*---------------- HEADER Section ---------------*/
+  .chevron {
+    width: 5rem;
+  }
+
+  .chevron-line {
+    stroke-width: 3px;
+  }
 }
