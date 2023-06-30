@@ -131,7 +131,7 @@ ul {
 }
 
 .chevron-line {
-  stroke-width: 5px;
+  stroke-width: 3px;
 }
 
 .chevron.animated {
@@ -255,9 +255,6 @@ ul {
   /*---------------- HEADER Section ---------------*/
   .chevron {
     width: 5rem;
-  }
-
-  .chevron-line {
-    stroke-width: 3px;
+    margin-bottom: 24px;
   }
 }
