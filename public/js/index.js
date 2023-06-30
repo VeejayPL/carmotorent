@@ -1,6 +1,7 @@
 const button = document.querySelector("button");
 const navMobile = document.querySelector(".nav-menu");
 const header = document.querySelector(".header");
+const chevron = document.querySelector(".chevron");
 
 button.addEventListener("click", () => {
   const currentState = button.getAttribute("data-state");
@@ -20,7 +21,9 @@ button.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     header.classList.add("scrolled");
+    chevron.classList.remove("animated");
   } else if (window.scrollY <= 50) {
     header.classList.remove("scrolled");
+    chevron.classList.add("animated");
   }
 });
