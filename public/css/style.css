@@ -115,7 +115,7 @@ ul {
 /*---------------- HERO Section ---------------*/
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("/images/hero-mobile.jpg");
+    url("/carmotorent/images/hero-mobile.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -131,7 +131,7 @@ ul {
 }
 
 .chevron-line {
-  stroke-width: 5px;
+  stroke-width: 3px;
 }
 
 .chevron.animated {
@@ -218,7 +218,7 @@ ul {
 @media (min-width: 600px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-      url("/images/hero.jpg");
+      url("/carmotorent/images/hero.jpg");
   }
 }
 
@@ -255,9 +255,6 @@ ul {
   /*---------------- HEADER Section ---------------*/
   .chevron {
     width: 5rem;
-  }
-
-  .chevron-line {
-    stroke-width: 3px;
+    margin-bottom: 24px;
   }
 }
