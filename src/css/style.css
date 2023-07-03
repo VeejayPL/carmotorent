@@ -9,6 +9,10 @@
   --roboto: "Roboto", sans-serif, system-ui;
 }
 
+.flex {
+  padding: 2rem;
+}
+
 *,
 *::before,
 *::after {
@@ -25,9 +29,17 @@ body {
 }
 
 /*---------------- UTILS ---------------*/
+.svg {
+  height: 1rem;
+  fill: var(--svg-color);
+}
+
 a {
   text-decoration: none;
   color: var(--secondary);
+}
+a:hover {
+  color: var(--accent);
 }
 
 ul {
@@ -78,10 +90,6 @@ ul {
 .nav-link {
   transition: 300ms ease-out;
   font-weight: bold;
-}
-
-.nav-link:hover {
-  color: var(--accent);
 }
 
 .nav-social {
@@ -151,20 +159,48 @@ ul {
   animation: bounce 2s ease infinite;
 }
 
-/* .hero-text { */
-/* font-family: var(--roboto); */
-/* font-size: 48px; */
-/* color: var(--secondary); */
-/* animation: fadeIn 600ms forwards ease-in-out; */
-/* } */
+/*---------------- Footer Section ---------------*/
+.footer {
+  max-width: 1600px;
+  width: 96%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-top: 2px solid var(--accent);
+  background: var(--primary);
+  color: var(--secondary);
+}
+.footer > div {
+  display: flex;
+  justify-content: space-between;
+}
 
-.vehicle-list {
-  width: 100vw;
+.address {
+  border-right: 2px solid var(--secondary);
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 1rem;
+  font-style: normal;
+}
+
+.address-line {
+  display: flex;
   align-items: center;
-  border: 1px solid green;
+  gap: 6px;
+}
+
+.footer > div > p {
+  width: 50%;
+  justify-content: center;
+}
+
+.author {
+  justify-content: center;
+  padding-top: 1rem;
+}
+.github:hover {
+  transform: scale(1.1);
+  fill: var(--secondary);
 }
 
 /* ------------------- Animations ------------------------ */
@@ -237,7 +273,6 @@ ul {
 
 @media (max-width: 1024px) {
   /*---------------- HEADER Section ---------------*/
-
   .nav-button {
     display: block;
   }
@@ -266,9 +301,20 @@ ul {
     background: var(--primary);
   }
 
-  /*---------------- HEADER Section ---------------*/
+  /*---------------- HERO Section ---------------*/
   .chevron {
     width: 5rem;
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  /*---------------- FOOTER Section ---------------*/
+  .address {
+    width: 60%;
+  }
+
+  .footer > div > p {
+    width: 40%;
   }
 }
