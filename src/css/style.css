@@ -55,11 +55,22 @@ a:hover {
   list-style: none;
 }
 
+.contact-link {
+  color: var(--accent);
+  font-weight: bold;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid var(--secondary);
   background: var(--accent);
   color: var(--primary);
+}
+
+.google-map {
+  height: 600px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 /*---------------- HEADER Section ---------------*/
@@ -204,6 +215,21 @@ button {
   margin-bottom: 1rem;
 }
 
+/*---------------- Contact Section ---------------*/
+.contact-list {
+  margin-top: 2rem;
+  margin-left: 1.2rem;
+}
+
+.contact-list > li {
+  margin: 1rem 0 1rem 1.3rem;
+}
+
+.contact-para {
+  text-align: center;
+  margin: 1rem 0;
+  /* line-height: 1.5; */
+}
 /*---------------- Footer Section ---------------*/
 .footer {
   max-width: 1600px;
@@ -241,8 +267,9 @@ button {
 
 .author {
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
+
 .github:hover {
   transform: scale(1.1);
   fill: var(--secondary);
@@ -317,6 +344,11 @@ button {
 }
 
 @media (max-width: 1024px) {
+  .google-map {
+    height: 500px;
+    width: 100%;
+    border-radius: 6px;
+  }
   /*---------------- HEADER Section ---------------*/
   .nav-button {
     display: block;
@@ -361,7 +393,11 @@ button {
   .main {
     padding: 2rem 0;
   }
-
+  .google-map {
+    height: 400px;
+    width: 100%;
+    border-radius: 6px;
+  }
   /*---------------- FOOTER Section ---------------*/
   .address {
     width: 60%;
