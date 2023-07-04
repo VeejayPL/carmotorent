@@ -21,9 +21,13 @@ button.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     header.classList.add("scrolled");
-    chevron.classList.remove("animated");
+    if (chevron) {
+      chevron.classList.remove("animated");
+    }
   } else if (window.scrollY <= 50) {
     header.classList.remove("scrolled");
-    chevron.classList.add("animated");
+    if (chevron) {
+      chevron.classList.add("animated");
+    }
   }
 });
