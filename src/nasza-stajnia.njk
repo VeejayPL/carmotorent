@@ -1,0 +1,21 @@
+---
+title: "Carmotorent - Nasza stajnia"
+description: "Carmotorent - nasza stajnia dostępnych pojazdów do wypożyczenia w
+Poznaniu i okolicach"
+layout: "base.njk"
+---
+<main class="content">
+<h2>Nasza stajnia</h2>
+<h3>Samochody</h3>
+<div class="vehicle-list">
+{% for vehicle in collections.cars %}
+{% include "vehicle-card.njk" %}
+{% endfor %}
+</div>
+<h3>Motocykle</h3>
+<div class="vehicle-list">
+{% for vehicle in collections.motorbikes %}
+{% include "vehicle-card.njk" %}
+{% endfor %}
+</div>
+</main>
