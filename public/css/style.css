@@ -9,10 +9,6 @@
   --roboto: "Roboto", sans-serif, system-ui;
 }
 
-.flex {
-  padding: 2rem;
-}
-
 *,
 *::before,
 *::after {
@@ -29,6 +25,19 @@ body {
 }
 
 /*---------------- UTILS ---------------*/
+
+.content {
+  color: var(--secondary);
+  max-width: 1600px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 8rem 0 2rem 0;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
 .svg {
   height: 1rem;
   fill: var(--svg-color);
@@ -42,8 +51,26 @@ a:hover {
   color: var(--accent);
 }
 
-ul {
+.header ul {
   list-style: none;
+}
+
+.contact-link {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--secondary);
+  background: var(--accent);
+  color: var(--primary);
+}
+
+.google-map {
+  height: 600px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 /*---------------- HEADER Section ---------------*/
@@ -159,6 +186,50 @@ ul {
   animation: bounce 2s ease infinite;
 }
 
+/*---------------- Intro Section ---------------*/
+
+/*---------------- Regulations Section ---------------*/
+.heading {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--accent);
+}
+
+.regulations {
+  margin-top: 2rem;
+  margin-left: 1.2rem;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+.regulations ul {
+  list-style-type: disc;
+  margin-left: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.regulations > ul > li {
+  margin-bottom: 1rem;
+}
+
+.regulations > li {
+  margin-bottom: 1rem;
+}
+
+/*---------------- Contact Section ---------------*/
+.contact-list {
+  margin-top: 2rem;
+  margin-left: 1.2rem;
+}
+
+.contact-list > li {
+  margin: 1rem 0 1rem 1.3rem;
+}
+
+.contact-para {
+  text-align: center;
+  margin: 1rem 0;
+  /* line-height: 1.5; */
+}
 /*---------------- Footer Section ---------------*/
 .footer {
   max-width: 1600px;
@@ -196,8 +267,9 @@ ul {
 
 .author {
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
+
 .github:hover {
   transform: scale(1.1);
   fill: var(--secondary);
@@ -272,6 +344,11 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  .google-map {
+    height: 500px;
+    width: 100%;
+    border-radius: 6px;
+  }
   /*---------------- HEADER Section ---------------*/
   .nav-button {
     display: block;
@@ -309,6 +386,18 @@ ul {
 }
 
 @media (max-width: 768px) {
+  /*---------------- UTILS ---------------*/
+  .content {
+    padding: 5rem 0 2rem 0;
+  }
+  .main {
+    padding: 2rem 0;
+  }
+  .google-map {
+    height: 400px;
+    width: 100%;
+    border-radius: 6px;
+  }
   /*---------------- FOOTER Section ---------------*/
   .address {
     width: 60%;
