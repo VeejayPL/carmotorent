@@ -1,3 +1,11 @@
-<h3>
-<a href="{{ vehicle.url }}"> {{ vehicle.data.title }} </a>
-</h3>
+<div class="card">
+<img class="card-image" src={{ vehicle.data.img }} alt={{ vehicle.data.imgAlt }}>
+<div class="card-details">
+<h3 class="card-title"> {{ vehicle.data.name }} </h3>
+<p>Prędkość: {{ vehicle.data.maxSpeed }}</p> 
+<p>Silnik: {{ vehicle.data.engine }}</p> 
+<p>Skrzynia: {{ vehicle.data.transmission }}</p> 
+<p>Ilość osób: {{ vehicle.data.personCount }}</p> 
+<button><a href="{{ vehicle.url }}">Zobacz</a></button>
+</div>
+</div>

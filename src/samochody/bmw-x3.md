@@ -1,9 +1,15 @@
 ---
-title: "BMW X3"
-summary: "Quick and large car"
+title: Carmotorent - BMW X3
 description: "Szybkie i przestronne BMW na wynajem - Poznań"
+name: "BMW X3 G01 3.0d 265KM"
+img: "/images/car/bmw-x3-g01/bmw-card.jpg"
+imgAlt: "Samochód BMW X3 265KM"
+maxSpeed: "265"
+engine: "3.0 Diesel"
+transmission: "Automat"
+personCount: "5"
+summary: "Quick and large car"
 ---
 
-### BMW X3
-
+<p>Taki tag żeby sprawdzić czy HTML działa w Markdown</p>
 LOREM IPSUM LOREM IPSUM
