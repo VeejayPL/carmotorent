@@ -23,49 +23,12 @@ body {
   background: var(--primary);
   position: relative;
 }
-.card {
-  height: 500px;
-  width: 300px;
-  margin: 1rem 0;
-  display: grid;
-  grid-template-rows: minmax(100%, 1fr);
-  grid-template-areas: "stack";
-  overflow: hidden;
-  position: relative;
-}
-.card-title,
-.card-image,
-.card-details {
-  grid-area: stack;
-}
-.card-title {
-  text-align: center;
-}
-.card-image {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 8px;
-}
-/* .card-details { */
-/* transform: translateY(calc(100% - 25%)); */
-/* } */
-.card-details {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 25%;
-  width: 100%;
-  border-radius: 0 0 8px 8px;
-  background: rgba(3, 0, 39, 0.5);
-  backdrop-filter: blur(8px);
-}
-/*---------------- UTILS ---------------*/
 
+/*---------------- UTILS ---------------*/
 .content {
   color: var(--secondary);
   max-width: 1600px;
-  width: 98%;
+  width: 96%;
   margin: 0 auto;
   padding: 8rem 0 2rem 0;
 }
@@ -83,11 +46,13 @@ a {
   text-decoration: none;
   color: var(--secondary);
 }
+
 a:hover {
   color: var(--accent);
 }
 
-.header ul {
+.header ul,
+.grid-vehicle {
   list-style: none;
 }
 
@@ -116,7 +81,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   transition: all 500ms ease-in-out;
 }
 
@@ -180,9 +145,11 @@ button {
 .nav-button[data-state="opened"] :is(.top, .bottom) {
   animation: to-close-icon 1s forwards;
 }
+
 .nav-button .hamburger {
   transition: rotate 800ms 100ms;
 }
+
 .nav-button[data-state="opened"] .hamburger {
   rotate: 1turn;
 }
@@ -223,6 +190,79 @@ button {
 }
 
 /*---------------- Intro Section ---------------*/
+
+/*---------------- Vehicle Grid Section ---------------*/
+.vehicles {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.vehicles h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.grid-vehicle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 2rem;
+}
+
+.grid-vehicle > * {
+  justify-content: center;
+  flex: 1 0 300px;
+}
+
+.card {
+  height: 500px;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-rows: minmax(100%, 1fr);
+  grid-template-areas: "stack";
+  overflow: hidden;
+  position: relative;
+}
+
+.card > * {
+  grid-area: stack;
+}
+
+.card-title {
+  padding: 0.5rem;
+  height: 2.5rem;
+  z-index: 1;
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-image {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.card-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+}
+
+.card-title,
+.card-details {
+  background: rgba(3, 0, 39, 0.5);
+  backdrop-filter: blur(8px);
+}
 
 /*---------------- Regulations Section ---------------*/
 .heading {
@@ -433,6 +473,10 @@ button {
     height: 400px;
     width: 100%;
     border-radius: 6px;
+  }
+  /*---------------- GRID CARD Section ---------------*/
+  .card-details {
+    padding: 0.8rem 0;
   }
   /*---------------- FOOTER Section ---------------*/
   .address {
