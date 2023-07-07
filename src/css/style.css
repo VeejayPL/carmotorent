@@ -1,8 +1,9 @@
 :root {
-  --secondary: #f2f3d9;
+  /* --secondary: #f2f3d9; */
   /* --primary: #030027; */
   /* --accent: #f0a202; */
   --primary: #2f2f2f;
+  --secondary: #ebebeb;
   --accent: #ff3131;
   --button-color: var(--secondary);
   --chevron-color: var(--secondary);
@@ -92,7 +93,7 @@ button {
   left: 0;
   width: 100%;
   z-index: 2;
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .scrolled {
@@ -118,6 +119,7 @@ button {
   gap: 10px;
   font-family: var(--roboto);
   font-size: 2rem;
+  font-weight: bold;
   color: var(--accent);
 }
 
@@ -203,6 +205,47 @@ button {
 }
 
 /*---------------- Intro Section ---------------*/
+.intro {
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro-article {
+  max-width: 800px;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.intro-article:last-child {
+  align-self: flex-end;
+}
+
+.intro-para {
+  padding: 2rem 0 3rem 0;
+}
+
+.intro-para span {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.article-button {
+  text-align: center;
+  background: var(--accent);
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-weight: bold;
+}
+
+.article-button:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
 
 /*---------------- Vehicle Grid Section ---------------*/
 .vehicles {
@@ -255,7 +298,7 @@ button {
   height: 100%;
   width: 100%;
   border-radius: 18px;
-  transition: transform 500ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 .card-details {
@@ -497,10 +540,25 @@ section > ul > li > a:hover {
     width: 100%;
     border-radius: 6px;
   }
+
+  .intro {
+    padding: 1rem;
+  }
+
+  /*---------------- INTRO ---------------*/
+  .intro-article {
+    padding: 1rem 0;
+  }
+
+  .intro-para {
+    padding: 1rem 0 2rem 0;
+  }
+
   /*---------------- GRID CARD Section ---------------*/
   .card-details {
     padding: 0.8rem 0;
   }
+
   /*---------------- FOOTER Section ---------------*/
   .address {
     width: 60%;
