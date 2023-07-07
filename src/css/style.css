@@ -213,12 +213,14 @@ button {
   color: var(--primary);
   padding: 2rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .intro-article {
   max-width: 800px;
   line-height: 1.6;
   padding: 2rem;
+  transition: all 500ms ease-in-out;
 }
 
 .intro-article:last-child {
@@ -372,6 +374,7 @@ section > ul > li > a:hover {
   margin: 1rem 0;
   /* line-height: 1.5; */
 }
+
 /*---------------- Footer Section ---------------*/
 .footer {
   max-width: 1600px;
@@ -418,6 +421,39 @@ section > ul > li > a:hover {
 }
 
 /* ------------------- Animations ------------------------ */
+.animation {
+  opacity: 0;
+  transition: transform 600ms ease-in-out;
+}
+
+.left {
+  transform: translateX(-400px);
+}
+
+.left.go {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.right {
+  transform: translateX(400px);
+}
+
+.right.go {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.zoom {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.zoom.go {
+  transform: scale(1);
+  opacity: 1;
+}
+
 @keyframes bounce {
   0%,
   20%,
@@ -566,5 +602,14 @@ section > ul > li > a:hover {
 
   .footer > div > p {
     width: 40%;
+  }
+
+  /*---------------- ANIMATIONS Section ---------------*/
+  .left {
+    transform: translateX(-180px);
+  }
+
+  .right {
+    transform: translateX(180px);
   }
 }
