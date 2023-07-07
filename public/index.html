@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@1,700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/carmotorent/css/style.css" />
     <script src="/carmotorent/js/index.js" defer></script>
+    <script src="/carmotorent/js/observer.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -59,27 +60,28 @@ width="100">
 
 <main class="content main">
 <section class="intro">
-<div>
-<h2 class="intro-heading">Wynajem samochodów</h2>
-<p class="intro-para">Lorem ipsum</p>
-<button>Sprawdź</button>
-</div>
-<div>
-<h2 class="intro-heading">Wynajem motocykli</h2>
-<p class="intro-para">Lorem ipsum</p>
-<button>Sprawdź</button>
-</div>
+<article class="intro-article animation left">
+<h2 class="heading">Wynajem samochodów</h2>
+<p class="intro-para">Potrzebujesz samochodu, ale nie chcesz go kupować? W
+<span>Carmotorent</span> oferujemy doskonałe rozwiązanie w zakresie wynajmu samochodów, gdy potrzebujesz pojazdu tymczasowo. Niezależnie od tego, czy wybierasz się na wycieczkę, odwiedzasz rodzinę, czy po prostu musisz dać odpocząć swojemu własnemu samochodowi, z nami wynajem jest bezstresowy i bezproblemowy.</p>
+<a class="article-button" href=#cars>Sprawdź naszą ofertę</a>
+</article>
+<article class="intro-article animation right">
+<h2 class="heading">Wynajem motocykli</h2>
+<p class="intro-para">Przeżyj dreszcz emocji na otwartej drodze dzięki naszemu wynajmowi motocykli. Bez względu na to, czy wybierasz się na malowniczą, wiejską trasę, w podróż po kraju, czy zwiedzasz swoją okolicę, nasze motocykle dostarczą Cię tam, gdzie chcesz, bezpiecznie i w dobrym stylu. Nasze motocykle są wyposażone we wszystkie niezbędne urządzenia i sprzęt ochronny</p>
+<a class="article-button" href=#motorcycles>Sprawdź naszą ofertę</a>
+</article>
 </section>
 
-<section class="vehicles">
+<section id="cars" class="vehicles">
 <h2>Nasze auta</h2>
 <ul class="grid-vehicle">
 
 <li>
-<a href="/carmotorent/samochody/bmw-x3/">
-<article class="card">
+<a href="/samochody/bmw-x3/">
+<article class="card animation zoom">
 <h3 class="card-title"> BMW X3 G01 3.0d 265KM </h3>
-<img class="card-image" src=/carmotorent/images/car/bmw-x3-g01/bmw-card.jpg alt=Samochód BMW X3 265KM>
+<img class="card-image" src=/images/car/bmw-x3-g01/bmw-card.jpg alt=Samochód BMW X3 265KM>
 <div class="card-details">
 <p> 
 <svg class="svg" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
@@ -97,10 +99,10 @@ width="100">
 
 
 <li>
-<a href="/carmotorent/samochody/tesla/">
-<article class="card">
+<a href="/samochody/tesla/">
+<article class="card animation zoom">
 <h3 class="card-title"> Tesla Model 3 Performance </h3>
-<img class="card-image" src=/carmotorent/images/car/tesla/tesla-card.jpg alt=Samochód Tesla Model 3 Performance>
+<img class="card-image" src=/images/car/tesla/tesla-card.jpg alt=Samochód Tesla Model 3 Performance>
 <div class="card-details">
 <p> 
 <svg class="svg" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
@@ -120,15 +122,15 @@ width="100">
 </ul>
 </section>
 
-<section class="vehicles">
+<section id="motorcycles" class="vehicles">
 <h2>Nasze motocykle</h2>
 <ul class="grid-vehicle">
 
 <li>
-<a href="/carmotorent/motocykle/mz250/">
-<article class="card">
+<a href="/motocykle/mz250/">
+<article class="card animation zoom">
 <h3 class="card-title"> MZ 250 Trophy </h3>
-<img class="card-image" src=/carmotorent/images/motorbike/mz250/mz250-card.jpg alt=Motocykl MZ 250 Trophy>
+<img class="card-image" src=/images/motorbike/mz250/mz250-card.jpg alt=Motocykl MZ 250 Trophy>
 <div class="card-details">
 <p> 
 <svg class="svg" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
@@ -146,10 +148,10 @@ width="100">
 
 
 <li>
-<a href="/carmotorent/motocykle/bmwf850/">
-<article class="card">
+<a href="/motocykle/bmwf850/">
+<article class="card animation zoom">
 <h3 class="card-title"> BMW F850 GS 2018r </h3>
-<img class="card-image" src=/carmotorent/images/motorbike/bmwf850/bmwf850-card.jpg alt=Motocykl BMW F850 GS 2018 rok>
+<img class="card-image" src=/images/motorbike/bmwf850/bmwf850-card.jpg alt=Motocykl BMW F850 GS 2018 rok>
 <div class="card-details">
 <p> 
 <svg class="svg" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
@@ -167,10 +169,10 @@ width="100">
 
 
 <li>
-<a href="/carmotorent/motocykle/hondacrf/">
-<article class="card">
+<a href="/motocykle/hondacrf/">
+<article class="card animation zoom">
 <h3 class="card-title"> Honda CRF1100L Africa Twin </h3>
-<img class="card-image" src=/carmotorent/images/motorbike/honda1100l/honda1100l-card.jpg alt=Motocykl Honda CRF1100L Africa Twin>
+<img class="card-image" src=/images/motorbike/honda1100l/honda1100l-card.jpg alt=Motocykl Honda CRF1100L Africa Twin>
 <div class="card-details">
 <p> 
 <svg class="svg" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64c0-17.4-6.9-33.1-18.1-44.6L366 161.7c5.3-12.1-.2-26.3-12.3-31.6s-26.3 .2-31.6 12.3L257.9 288c-.6 0-1.3 0-1.9 0c-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
