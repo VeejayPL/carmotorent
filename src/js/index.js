@@ -2,6 +2,27 @@ const button = document.querySelector("button");
 const navMobile = document.querySelector(".nav-menu");
 const header = document.querySelector(".header");
 const chevron = document.querySelector(".chevron");
+const itemList = document.querySelectorAll(".animation");
+
+const options = { threshold: 0.2 };
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("go");
+      observer.unobserve(entry.target);
+    }
+    // } else {
+    // entry.target.classList.remove("go");
+    // }
+  });
+};
+
+const myObserver = new IntersectionObserver(callback, options);
+
+itemList.forEach((item) => {
+  myObserver.observe(item);
+});
 
 button.addEventListener("click", () => {
   const currentState = button.getAttribute("data-state");
