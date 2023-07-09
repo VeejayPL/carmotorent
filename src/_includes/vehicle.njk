@@ -3,8 +3,37 @@ layout: "base.njk"
 ---
 
 <main class="content">
-<h2> {{ name }} </h2>
-<p> {{ summary }} </p>
-<div> {{ content | safe }} </div>
-<a href="/">Powrót na główną</a>
+<h1 class="heading"> {{ name }} </h1>
+<div class="vehicle-info">
+<div class="vehicle-details">
+<div>
+{{ content | safe }} 
+</div>
+<figure>
+<img class="vehicle-image" src="{{ img }}" alt="{{ imgAlt }}">
+</figure>
+</div>
+<div class="vehicle-renting">
+<h2 class="heading">Cennik wynajmu</h2>
+<ul>
+<li>Od poniedziałku do czwartku:</li>
+<ul>
+<li>1 - 2 dni: {{ price1 }} zł / dzień</li>
+<li>3 - 4 dni: {{ price2 }} zł / dzień</li>
+<li>5 - 7 dni: {{ price3 }} zł / dzień</li>
+<li>powyżej 8 dni: {{ price4 }} zł / dzień</li>
+</ul>
+<li>Weekend (piątek - niedziela)
+<ul>
+<li>{{ priceWeekend }} zł / dzień</li>
+</ul>
+<li>Limit: {{ kmLimit }} km / dzień</li>
+<li>Koszt dodatkowych km - {{ additionalKmPrice }}  zł / km</li>
+<li>Kaucja zwrotna: {{ deposit }} zł</li>
+</ul>
+</div>
+
+</div>
+<div class="vehicle-gallery">
+</div>
 </main>

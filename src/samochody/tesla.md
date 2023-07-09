@@ -8,8 +8,8 @@ power: "512 KM"
 engine: "Elektryczny"
 transmission: "Automat"
 personCount: "5"
-summary: "Quick and large car"
 ---
 
-<p>Taki tag żeby sprawdzić czy HTML działa w Markdown</p>
-LOREM IPSUM LOREM IPSUM
+Tesla Model 3 Performance to wysokiej klasy samochód elektryczny produkowany przez amerykańską firmę Tesla. Model 3 Performance to sportowa wersja Modelu 3, która oferuje imponujące osiągi dzięki silnikowi o mocy 450 KM i momencie obrotowym na poziomie 639 Nm. Samochód jest w stanie przyspieszyć od 0 do 100 km/h w zaledwie 3,4 sekundy. Model 3 Performance jest także wyposażony w nowoczesne technologie, takie jak autonomiczny system jazdy czy ekran dotykowy o dużej przekątnej, który służy jako kokpit samochodu.
+
+Nasze samochody łączą eleganckie linie zewnętrzne z układem wnętrza dostosowanym do wygody i bezpieczeństwa, zapewniając, że Twoja podróż będzie równie komfortowa, co przyjemna. Mając na uwadze nasze zaangażowanie w zrównoważony rozwój, możesz zaufać firmie Carmotorent, która zapewni Ci niezrównane wrażenia z jazdy bez kompromisów w kwestii wartości.

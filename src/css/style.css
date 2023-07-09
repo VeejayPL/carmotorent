@@ -31,6 +31,53 @@ body {
   position: relative;
 }
 
+/*---------------- VEHICLE Page ---------------*/
+.vehicle-details {
+  max-height: 750px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: minmax(100%, 1fr);
+  grid-template-areas: "stack";
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 0;
+}
+.vehicle-details > * {
+  grid-area: stack;
+}
+.vehicle-details div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 18px;
+  line-height: 1.6;
+  z-index: 1;
+  background: rgba(47, 47, 47, 0.8);
+}
+.vehicle-details figure {
+}
+.vehicle-image {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+}
+.vehicle-renting {
+  max-height: 700px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: var(--secondary);
+  color: var(--primary);
+  border-radius: 18px;
+}
+.vehicle-renting ul {
+  padding: 1rem 0;
+}
 /*---------------- UTILS ---------------*/
 .content {
   color: var(--secondary);
@@ -63,7 +110,8 @@ a:hover {
 }
 
 .header ul,
-.grid-vehicle {
+.grid-vehicle,
+.vehicle-renting ul {
   list-style: none;
 }
 
