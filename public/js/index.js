@@ -12,9 +12,6 @@ const callback = (entries, observer) => {
       entry.target.classList.add("go");
       observer.unobserve(entry.target);
     }
-    // } else {
-    // entry.target.classList.remove("go");
-    // }
   });
 };
 
