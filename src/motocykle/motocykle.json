@@ -1,4 +1,4 @@
 {
-  "layout": "vehicle.njk",
+  "layout": "moto-page.njk",
   "tags": "motorbikes"
 }

@@ -1,0 +1,40 @@
+---
+layout: "base.njk"
+---
+
+<main class="content">
+<h1 class="heading"> {{ name }} </h1>
+<div class="vehicle-info">
+<div class="vehicle-details">
+<div>
+{{ content | safe }} 
+</div>
+<figure>
+<img class="vehicle-image" src="{{ img }}" alt="{{ imgAlt }}">
+</figure>
+</div>
+<div class="vehicle-renting">
+<h2 class="heading">Cennik wynajmu</h2>
+<ul>
+<ul>
+<li>1 - 2 dni: {{ price1 }} zł / dzień</li>
+<li>3 - 6 dni: {{ price2 }} zł / dzień</li>
+<li>7 - 29 dni: {{ price3 }} zł / dzień</li>
+<li>1 miesiąc: {{ price4 }} zł</li>
+</ul>
+<ul>
+<li>Limit kilometrów:</li>
+<li>1 - 2 dni: {{ kmLimit1 }} km / dzień</li>
+<li>3 - 6 dni: {{ kmLimit2 }} km / dzień</li>
+<li>7 - 29 dni: {{ kmLimit3 }} km / dzień</li>
+<li>1 miesiąc: {{ kmLimit4 }} km</li>
+</ul>
+<li>Koszt dodatkowych km - {{ additionalKmPrice }}  zł / km</li>
+<li>Kaucja zwrotna: {{ deposit }} zł</li>
+</ul>
+</div>
+
+</div>
+<div class="vehicle-gallery">
+</div>
+</main>

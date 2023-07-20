@@ -3,11 +3,19 @@ title: Carmotorent - BMW X3
 description: Szybkie, przestronne i komfortowe  BMW X3 na wynajem - Poznań
 name: BMW X3 G01 3.0d 265KM
 img: /images/car/bmw-x3-g01/bmw-card.jpg
-imgAlt: "Samochód BMW X3 265KM"
+imgAlt: Samochód BMW X3 265KM
 power: 265 KM
 engine: 3.0 Diesel
 transmission: Automat
 personCount: 5
+price1: "-"
+price2: "-"
+price3: "-"
+price4: 5999
+kmLimit1: "-"
+kmLimit2: "-"
+kmLimit3: "-"
+kmLimit4: 3000
 ---
 
 Do wynajęcia BMW X3 G01 w kolorze czarnym. Samochód jest w pełni wyposażony i posiada silnik o pojemności 3.0 l diesel oraz automatyczną skrzynię biegów. Świetnie nadaje się do jazdy w mieście oraz na dalsze trasy.

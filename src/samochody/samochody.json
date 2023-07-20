@@ -1,4 +1,4 @@
 {
-  "layout": "vehicle.njk",
+  "layout": "car-page.njk",
   "tags": "cars"
 }

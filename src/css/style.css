@@ -54,7 +54,7 @@ body {
   border-radius: 18px;
   line-height: 1.6;
   z-index: 1;
-  background: rgba(47, 47, 47, 0.8);
+  background: rgba(47, 47, 47, 0.9);
 }
 
 .vehicle-details figure {

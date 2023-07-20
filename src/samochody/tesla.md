@@ -1,13 +1,21 @@
 ---
-title: "Carmotorent - Tesla Performance"
-description: "Tesla Model 3 Performance na wynajem - Poznań"
-name: "Tesla Model 3 Performance"
-img: "/images/car/tesla/tesla-card.jpg"
-imgAlt: "Samochód Tesla Model 3 Performance"
-power: "512 KM"
-engine: "Elektryczny"
-transmission: "Automat"
-personCount: "5"
+title: Carmotorent - Tesla Performance
+description: Tesla Model 3 Performance na wynajem - Poznań
+name: Tesla Model 3 Performance
+img: /images/car/tesla/tesla-card.jpg
+imgAlt: Samochód Tesla Model 3 Performance
+power: 512 KM
+engine: Elektryczny
+transmission: Automat
+personCount: 5
+price1: 750
+price2: 650
+price3: 550
+price4: 8500
+kmLimit1: 300
+kmLimit2: 250
+kmLimit3: 200
+kmLimit4: 3000
 ---
 
 Tesla Model 3 Performance to wysokiej klasy samochód elektryczny produkowany przez amerykańską firmę Tesla. Model 3 Performance to sportowa wersja Modelu 3, która oferuje imponujące osiągi dzięki silnikowi o mocy 450 KM i momencie obrotowym na poziomie 639 Nm. Samochód jest w stanie przyspieszyć od 0 do 100 km/h w zaledwie 3,4 sekundy. Model 3 Performance jest także wyposażony w nowoczesne technologie, takie jak autonomiczny system jazdy czy ekran dotykowy o dużej przekątnej, który służy jako kokpit samochodu.
