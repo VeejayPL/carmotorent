@@ -57,9 +57,6 @@ body {
   background: rgba(47, 47, 47, 0.9);
 }
 
-.vehicle-details figure {
-}
-
 .vehicle-image {
   object-fit: cover;
   object-position: center;
@@ -99,6 +96,7 @@ body {
   height: 1rem;
   fill: var(--svg-color);
 }
+
 .logo {
   width: 3rem;
   padding: 0;
@@ -195,6 +193,11 @@ button {
 .nav-social-item {
   width: 24px;
   fill: var(--svg-color);
+  transition: all 300ms ease-in-out;
+}
+
+.nav-social-item:hover {
+  fill: var(--secondary);
 }
 
 .nav-button {
@@ -255,6 +258,7 @@ button {
 .chevron.animated {
   animation: bounce 2s ease infinite;
 }
+
 .chevron:hover {
   --chevron-color: var(--accent);
 }
