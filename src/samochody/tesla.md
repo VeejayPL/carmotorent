@@ -1,6 +1,6 @@
 ---
 title: Carmotorent - Tesla Performance
-description: Tesla Model 3 Performance na wynajem - Poznań
+description: Tesla Model 3 Performance na wynajem - Poznań i okolice. Dzięki nam poczujesz moc przyspieszenia i przeżyjesz niezłą przygodę.
 name: Tesla Model 3 Performance
 img: /images/car/tesla/tesla-card.jpg
 imgAlt: Samochód Tesla Model 3 Performance

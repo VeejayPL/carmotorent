@@ -1,6 +1,6 @@
 ---
 title: Carmotorent - Honda Africa Twin
-description: Honda CRF1100L Africa Twin na wynajem - Poznań
+description: Honda CRF1100L Africa Twin na wynajem - Poznań. Wybierz się na weekendową wycieczkę motocyklem z automatyczną skrzynią biegów. Pokonuj zakręty i ciesz się wolnością.
 name: Honda CRF1100L Africa Twin
 img: /images/motorbike/honda1100l/honda1100l-card.jpg
 imgAlt: Motocykl Honda CRF1100L Africa Twin

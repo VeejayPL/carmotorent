@@ -1,6 +1,6 @@
 ---
 title: Carmotorent - BMW X3
-description: Szybkie, przestronne i komfortowe  BMW X3 na wynajem - Poznań
+description: BMW X3 na wynajem - Poznań i okolice. Jeśli potrzebujesz szybkiego, przestronnego i komfortowego na chwilę lub na dłużej wynajmij je u nas.
 name: BMW X3 G01 3.0d 265KM
 img: /images/car/bmw-x3-g01/bmw-card.jpg
 imgAlt: Samochód BMW X3 265KM

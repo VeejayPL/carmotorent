@@ -1,6 +1,6 @@
 ---
 title: Carmotorent - BMW F850 GS
-description: Turystyczne BMW F850 GS na wynajem - Poznań
+description: Turystyczne BMW F850 GS na wynajem - Poznań. Wypożycz na weekend i poczuj przygodę pokonując górskie zakręty.
 name: BMW F850 GS 2018r
 img: /images/motorbike/bmwf850/bmwf850-card.jpg
 imgAlt: Motocykl BMW F850 GS 2018 rok
