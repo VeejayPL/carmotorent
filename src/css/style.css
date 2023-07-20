@@ -631,7 +631,10 @@ section > ul > li > a:hover {
     width: 100%;
     border-radius: 6px;
   }
-
+  /*---------------- VEHICLE Page---------------*/
+  .vehicle-details div {
+    gap: 0.5rem;
+  }
   /*---------------- INTRO ---------------*/
   .intro {
     padding: 1rem;

@@ -18,14 +18,24 @@ additionalKmPrice: 1
 deposit: 2000
 ---
 
+BMW F850 GS rocznik 2018
+
 Pojemność: 853 cm³
+
 Typ silnika: 4-suwowy, chłodzony cieczą, 2-cylindrowy, rzędowy, rozrząd DOHC, 4 zawory na cyl., smarowanie z suchą miską olejową, wtrysk paliwa, śr. gardzieli 48 mm, reg. katalizator.
+
 Moc maksymalna: 95 KM (70 kW) przy 8250/min
+
 Maksymalny moment obrotowy: 92 Nm przy 6250/min
+
 Skrzynia biegów: manualna, quick-shifter
+
 Spalanie: 4,5 l / 100 km
+
 Pojemność zbiornika paliwa: 15 l
+
 Napęd: Łańcuch
+
 ABS, Kontrola trakcji.
 
 Wyposażony w zestaw kufrów bocznych oraz centralny, nóżkę centralną oraz gmole.
